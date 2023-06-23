@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Task2</title>
+  <script>
+    function Variable() {
+      debugger
+      var strText = document.getElementById("hel1").value;
+      var strText1 = document.getElementById("hel2").value;
+      var strText2 = document.getElementById("hel3").value;
+      var strText3 = document.getElementById("hel4").value;
+      var strText5 = document.getElementById("hel5").value;
+      document.getElementById("p5").innerHTML = strText5;
+      document.getElementById("p1").innerHTML = strText;
+      document.getElementById("p2").innerHTML = strText1;
+      document.getElementById("p3").innerHTML = strText2;
+      document.getElementById("p4").innerHTML = strText3;
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <br>
+  <h1 align="center">Student Enrollment Form</h1>
+  <br>
+  <aside>
+    <table>
+      <th>
+        <h3 align="center">Enrolled Students</h3>
+      </th>
+      <br>
+      <tr class="table">
+        <td>Description</td>
+
+      </tr>
+      <hr>
+      <td>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+
+      </td>
+
+
+    </table>
+  </aside>
+  <div class="Hello bye">
+    <form>
+      <label>
+        <h3>Name:</h3>
+      </label>
+      <input type="text" name="Name" id="hel1" required />
+      <label>
+        <h3>Email Id:</h3>
+      </label>
+      <input type="email" name="Email" id="hel2" required />
+      <label>
+        <h3>Website:</h3>
+      </label>
+      <input type="text" name="website" id="hel3" required />
+      <label>
+        <h3>Skills:</h3>
+      </label>
+      <input type="text" name="skills" id="hel4" required />
+      <label>
+        <h3>Gender:</h3>
+      </label>&ensp;&ensp;
+      <input type="radio" name="gender" id="hel5" value="male" onclick="Gender()"> Male &ensp;&ensp;&ensp;
+      <input type="radio" name="gender" id="hel6" value="Female" onclick="Gender2()"> Female
+
+      <br>
+      <br>
+
+      <input type="button" value="Submit" id="btnSubmit" class="btn info" onclick="Variable()">&ensp;&ensp;&ensp;&ensp;
+      <input type="reset" value="Clear" class="btn danger">
+    </form>
+
+  </div>
+
+</body>
+
+</html>
